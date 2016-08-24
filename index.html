@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+
+    <!--_____CSS StyleSheets Section_____-->
+
+    <!-- StyleSheets of the page -->
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/accordion.css">
+
+    <!-- Google Weather Map Stylesheet-->
+    <link rel="stylesheet" href="../../Content/css/WeatherMap.css">
+
+    <!-- Include jQuery to the project -->
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+    <!-- Google Weather Map Lib -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6gP6RHIBmVehHAkKVyXHiKFNJI2TACnw"></script>
+   
+</head>
+
+<!-- Main Section -->
+<body>
+    <h1> Weather App </h1>
+
+    <div class="all">
+
+        <!-- Dropdown section List of Countries and Cities -->
+        <button class="accordion">Get Weather by Country and City </button>
+        <div class="panel">
+            <table>
+                <tr>
+                    <div class="form-group">
+                        <select id='dropdwnCountrySelectList' class="form-control">
+                        </select>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="form-group">
+                        <select id='selectCities' class="form-control">
+                        </select>
+                    </div>
+                </tr>
+                <tr>
+                    <button type="button" class="btn btn-primary" id="dropdwnSearchBttn">
+                        Search
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                    
+                </tr>
+            </table>
+            <img id="loadinggif" src="Content/img/loading-circle.gif" width="100" height="100">
+        </div>
+
+        <!-- Input Search box section -->
+        <button class="accordion">Search Box</button>
+        <div class="panel">
+            <input id="txtsearch" type="text" name="search" placeholder="Search.." class="typeahead form-control">
+
+            <button type="button" class="btn btn-primary" id="txtbxSearchBttn">Search
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Weather Results in Cards -->
+    <div class="all" id="divall">
+        <div class="location"></div>
+        <div class="card">
+            <div class="in_card">
+                <div id="icon"></div>
+                <div id="temperature"></div>
+            </div>
+            <hr>
+            <div class="description"></div>
+            <div class="humidity"></div>
+            </hr>
+        </div>
+    </div>
+
+
+    <!-- Maps Place -->
+    <div class="all">
+        <div id="googleMap"></div>
+    </div>
+   
+
+
+
+    <!--_______Additional jQuery Libraries Section_______-->
+
+    <!-- Inputfield autocomplete Lib -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
+
+    <!-- Custom jQueries -->
+    <script src="js/pageevents.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/accordion.js"></script>
+   
+   
+   
+</body>
+</html>
+
+
+
+
+
