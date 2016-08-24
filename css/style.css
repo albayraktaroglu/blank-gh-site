@@ -1,0 +1,56 @@
+h1 {
+  text-align: center;
+  font-size: 4em;
+  color: #BFAD61;
+  text-shadow: 0 0 0.3em #000;
+}
+.location{
+  text-align: center;
+  font-size: 2em;
+  color: black;
+}
+.all{
+  width: 500px;
+  text-align: center;
+  height: auto;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 30px;
+  color: #000;
+  box-shadow: 8px 8px 20px;
+  opacity: 0.7;
+  
+}
+.card {
+  font-family: 'Cardo', serif;
+  font-size: 1.6em;
+  width: 200px;
+  text-align: center;
+  height: auto;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #99ceff;
+  border-radius: 20px;
+  color: black;
+  box-shadow: 4px 5px 30px;
+}
+
+.search-field-left{
+  text-align: center;
+  text-decoration: blink;
+}
+
+#icon, #temperature{
+  display: inline-block;
+}
+row{
+  text-align: center;
+}
+
+/* backgrounds */
+.day { background: url('https://images.unsplash.com/photo-1419133203517-f3b3ed0ba2bb?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=6be1e1a42728168b5748273fba1f2570'); 
+background-size: cover;}
+
+.night { background: url('https://images.unsplash.com/photo-1416359658663-73a3834895eb?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=59b2dbcd3d5a34a96215b0969565e4ee'); 
+background-size: cover;}
