@@ -1,4 +1,4 @@
-# blank-gh-site
+# let go to that web site to see what happens https://albayraktaroglu.github.io/
 
 This repository is the simplest possible Github site that can work.
 
